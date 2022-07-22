@@ -1,0 +1,16 @@
+[Unit]
+Description=DHT11 demo service
+After=multi-user.target
+
+[Service]
+TimeoutStartSec=0
+Restart=on-failure
+RestartSec=30s
+WorkingDirectory=/usr/local/lib/python3.9/dist-packages
+Type=simple
+ExecStart=/home/pi/temp.sh
+StandardOutput=null
+
+[Install]
+WantedBy=multi-user.target
+ 
