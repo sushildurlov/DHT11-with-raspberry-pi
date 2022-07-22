@@ -16,3 +16,6 @@ Open a terminal window and write following commands: <br />
 
 pip3 install adafruit-circuitpython-dht <br />
 sudo apt-get install libgpiod2 <br />
+
+To enable dht11.py script run automatic copy temperature.service file inside /etc/systemd/system of raspberry pi  <br />
+Enjoy!!!
