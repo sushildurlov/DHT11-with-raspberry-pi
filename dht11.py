@@ -11,7 +11,7 @@ for proc in psutil.process_iter():
     if proc.name() == 'libgpiod_pulsein' or proc.name() == 'libgpiod_pulsei':
         proc.kill()
 # ---------------------------------
-dhtSensor = adafruit_dht.DHT11(board.D4)
+dhtSensor = adafruit_dht.DHT11(board.D4) #GPIO pin 4
 while True:
     log_format="[%(asctime)s.%(msecs)03d] [%(levelname)s] [%(lineno)d] %(msg)s"
     logging.basicConfig(filename='/var/log/debug1.log', filemode='a', format=log_format, datefmt="%Y-%m-%d %H:%M:%S", level=logging.INFO)
