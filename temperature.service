@@ -8,7 +8,7 @@ Restart=on-failure
 RestartSec=30s
 WorkingDirectory=/usr/local/lib/python3.9/dist-packages
 Type=simple
-ExecStart=/home/pi/temp.sh
+ExecStart=/home/pi/temp.sh   #change as your define path
 StandardOutput=null
 
 [Install]
